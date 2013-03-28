@@ -7,10 +7,13 @@
     width:500px;
 }
 
+.fish {
+    box-sizing: border-box;
+}
+
 .fish *:hover {
     background:pink !important;
     border:1px solid black;
-    box-sizing: border-box;
 }
 
 .fish > div {
@@ -25,16 +28,17 @@
     height: 10%;
     width: 5%;
     position:absolute;
+    z-index:1;
 }
 
 .fish .flipper > div {
     background:white;
-    width: 170%;
-    height: 175%;
+    width: 165%;
+    height: 200%;
     position:absolute;
-    top: 15%;
+    top: 6%;
     left: -58%;
-    border-radius: 0 50% 75% 0;
+    border-radius: 0 32% 75% 0;
 }
 
 .fish .flipper div > div {
@@ -42,7 +46,7 @@
     position:absolute;
     width: 115%;
     height: 110%;
-    top: 0%;
+    top: -2%;
     left: -28%;
     border-radius: 0 50% 75%;
 }
@@ -63,8 +67,8 @@
 }
 
 .fish .flipper.two {
-    left:50%;
-    top:50%;
+    left: 65%;
+    top: 70%;
 }
 
 .fish .fluke {
@@ -87,5 +91,89 @@
     border-radius: 50%;
 }
 
+.fish .body {
+    height:50%;
+    background:white;
+    width:50%;
+    position:absolute;
+    top:25%;
+    left:12%;
+    border-radius:50%;
+    z-index:0;
+}
 
+.fish .body > .nose {
+    height:90%;
+    width:55%;
+    background:black;
+    border-radius:50% 50% 0 0;
+    position:absolute;
+    top:18%;
+    left:0%;
+}
+
+.fish .body .nose + div {
+    background:black;
+    height:50%;
+    width:50%;
+    position:absolute;
+    top:50%;
+    left: 54%;
+}
+
+.fish .body .nose + div > div {
+    width: 47%;
+    height: 100%;
+    position:absolute;
+    background:white;
+    top: -50%;
+    left: -3%;
+    border-radius: 0% 0 20% 80%;
+}
+
+.fish .body .nose + div > div + div {
+    left:auto;
+    right: 38%;
+    border-radius: 0 0 100% 0;
+    width: 30%;
+    border:none;
+    height: 55%;
+    top: -5%;
+}
+
+.fish .body .nose + div > div + div + div {
+    border-radius:0;
+    left: 50%;
+    width: 50%;
+}
+
+
+
+.fish .body .tail {
+    background:white;
+    width:25%;
+    height: 35%;
+    position:absolute;
+    left: 95%;
+    top: 28%;
+}
+
+.fish .body .tail div {
+    background: black;
+    position:absolute;
+    width: 100%;
+    height: 185%;
+    top: -145%;
+    left: -17%;
+    border-radius: 0 0 35% 65%;
+    
+}
+
+.fish .body .tail div + div {
+    top: 68%;
+    border-radius: 50% 50% 0 0;
+    height: 60%;
+    left: -15%;
+    width: 114%;
+}
 
